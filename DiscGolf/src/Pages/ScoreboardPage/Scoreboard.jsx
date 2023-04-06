@@ -1,9 +1,9 @@
 const Scoreboard = () => {
-    return (
+  return (
     <footer>
-        <p>Scoreboard</p>
+      <p>Scoreboard</p>
     </footer>
-    )
-}
+  );
+};
 
 export default Scoreboard;

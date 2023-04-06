@@ -1,9 +1,9 @@
 const Profile = () => {
-    return (
+  return (
     <footer>
-        <p>Profile</p>
+      <p>Profile</p>
     </footer>
-    )
-}
+  );
+};
 
 export default Profile;

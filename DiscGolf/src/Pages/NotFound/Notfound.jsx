@@ -1,9 +1,9 @@
 const NotFound = () => {
-    return (
+  return (
     <footer>
-        <p>Scoreboard</p>
+      <p>Scoreboard</p>
     </footer>
-    )
-}
+  );
+};
 
 export default NotFound;

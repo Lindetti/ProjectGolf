@@ -1,9 +1,9 @@
 const Results = () => {
-    return (
+  return (
     <footer>
-        <p>Results</p>
+      <p>Results</p>
     </footer>
-    )
-}
+  );
+};
 
 export default Results;
