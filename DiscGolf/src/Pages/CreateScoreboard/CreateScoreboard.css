@@ -1,0 +1,73 @@
+.createScoreBoard-wrapper {
+    height: 100%;
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.createScoreBoard-wrapper h2 {
+    text-align: center;
+}
+
+.saveDiv {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.saveDiv button {
+    background-color: rgb(233, 112, 112);
+    border: none;
+    color: white;
+    padding: 0.5rem 0.9rem;
+    cursor: pointer;
+}
+
+.createScoreBoard-wrapper input {
+    padding: 0.7rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.playersDiv {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.playersDiv button {
+    border: none;
+    padding: 0.5rem 0.9rem;
+    cursor: pointer;
+    background-color: rgb(233, 112, 112);
+    color: white;
+}
+
+.playersAdded {
+    margin-top: 1rem;
+}
+
+.playersAdded ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.startRoundDiv {
+    text-align: center;
+}
+
+.startRoundDiv a {
+    background-color: rgb(233, 112, 112);
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.backDiv {
+    width: auto;
+    padding-left: 1rem;
+}
