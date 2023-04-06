@@ -1,33 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Routes, Route } from "react-router-dom";
+import Footer from "./Components/Footer";
+import LoginOrRegister from "./Pages/LoginOrRegister/LoginOrRegister";
+import Register  from "./Pages/Register/Register";
+import Start from "./Pages/Start/Start";
+import CreateScoreBoard  from "./Pages/CreateScoreboard/CreateScoreboard";
+import ScoreboardPage from "./Pages/ScoreboardPage/Scoreboard";
+import HolePages from "./Pages/HolePages/Hole";
+import Profile from "./Pages/Profile/Profile";
+import Results from "./Pages/Results/Results";
+import NotFound from "./Pages/NotFound/Notfound";
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div className="wrapper">
+     <Routes>
+     <Route path="/" element={<LoginOrRegister />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/start" element={<Start />} />
+        <Route path="/createscoreBoard" element={<CreateScoreBoard />} />
+        <Route path="/ScoreboardPage" element={<ScoreboardPage />} />
+        <Route path="/HolePages" element={<HolePages />} />
+        <Route path="/Profile" element={<Profile />} />
+        <Route path="/Results" element={<Results />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
     </div>
   )
 }
